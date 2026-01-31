@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+  background-color: #f4f4f9;
+}
+
+.chat-window {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.chat-log {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+
+.chat-message {
+  margin-bottom: 5px;
+  padding: 5px;
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+.chat-input {
+  border: none;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.send-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0 0 8px 8px;
+}
+
+.send-btn:hover {
+  background: #0056b3;
+}
+
+.change-username-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.change-username-btn:hover {
+  background: #e67e22;
+}
+
+.change-channel-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.change-channel-btn:hover {
+  background: #218838;
+}
+
+
+.emoji-picker {
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 5px;
+  max-width: 320px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.emoji {
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.emoji:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.toggle-emoji-btn {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.toggle-emoji-btn:hover {
+  background: #f9f9f9;
+  border-radius: 5px;
+}

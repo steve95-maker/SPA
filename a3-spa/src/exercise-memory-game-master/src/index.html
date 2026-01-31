@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Linnaeus University Memory</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <h1>Memory Game</h1>
+
+<!--  -->
+<nav>
+    <button id="game-options-btn">Game Options</button>
+    <div id="game-options-menu" class="hidden">
+        <label for="board-size-select">Choose Gameboard Size:</label>
+        <select id="board-size-select">
+            <option value="4x4">4 x 4</option>
+            <option value="2x2">2 x 2</option>
+            <option value="2x4">2 x 4</option>
+        </select>
+    </div>
+</nav>
+<!--  -->
+<div id="timer">Time: 0s</div>
+        <div id="game-container" class="game-board"></div>
+        <script src="./js/app.js" type="module"></script>
+    </body>
+</html>

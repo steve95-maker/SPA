@@ -1,0 +1,46 @@
+/* Basic styles for the desktop window */
+.window {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  resize: both;
+  overflow: hidden;
+}
+
+/* Header styles for the window */
+.window-header {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move; /* You can add drag-and-drop functionality later */
+}
+
+/* Close button styles */
+.window-header .close-btn {
+  background: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Content of the window */
+.window-content {
+  width: 100%;
+  height: calc(100% - 30px); /* Subtract header height */
+  border: none;
+}
+
+.app-icon.selected {
+  border: 2px solid blue !important;
+  background-color: lightblue !important;
+  border-radius: 5px !important;
+  width: 80px;
+}

@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.game-board {
+  display: grid;
+  gap: 10px; /* Space between cards */
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 120px;
+  height: 120px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden; /* Prevent image overflow */
+  background-size: cover; /* Scale the image to fully cover the card */
+  background-position: center; /* Center the image */
+}
+
+.card img {
+  display: none; /* Hide the <img> tag as we're using background images */
+}
+
+.card.flipped {
+  background-color: transparent;
+}
+
+
+/* nav style */
+nav {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.card:focus {
+  outline: 2px solid #007BFF; /* Highlight the focused card */
+}
